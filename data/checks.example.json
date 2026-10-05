@@ -1,0 +1,36 @@
+{
+  "checks": [
+    {
+      "name": "OpenAI Balance",
+      "check_type": "api_service",
+      "description": "openai",
+      "token": "sk-your-openai-key"
+    },
+    {
+      "name": "BTC Wallet",
+      "check_type": "crypto",
+      "address": "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh",
+      "currency": "BTC"
+    },
+    {
+      "name": "ETH Balance",
+      "check_type": "crypto",
+      "address": "0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+      "currency": "ETH",
+      "token": "your-etherscan-api-key"
+    },
+    {
+      "name": "VPN Panel",
+      "check_type": "vpn",
+      "url": "https://your-vpn-panel.com/api/me",
+      "token": "your-panel-token"
+    },
+    {
+      "name": "Custom API",
+      "check_type": "universal",
+      "url": "https://api.example.com/v1/balance",
+      "json_path": "data.balance",
+      "headers": {"X-API-Key": "your-api-key"}
+    }
+  ]
+}
